@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Script -->
+    <div class="form-container">
+        <form>
+            <span class="clear" title="Clear all fields"><i class="fa fa-minus-circle"></i></span>
+
+            <h1 class="form-header">Sign Up Today!</h1>
+            <div class="form-body">
+                <div class="input-div">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" required autocomplete="off" autofocus placeholder="Full Name" minlength="3" maxlength="10" data-key="fullName" focus>
+                </div>
+                <div class="input-div">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" id="phone-number" required autocomplete="off" placeholder="10 digit number" data-key="phoneNumber">
+                </div>
+                <div class="input-div">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" required autocomplete="off" placeholder="email@address.com" data-key="email">
+                </div>
+                <div class="input-div">
+                    <label for="url">Website Url</label>
+                    <input type="text" id="url" required autocomplete="off" placeholder="http://example.com" data-key="url">
+                </div>
+                <div class="input-div">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" required autocomplete="off" placeholder="Create Password (Min. 8 characters)" title="Min. 1 uppercase, Min. 1 lowercase, Min. 1 Special Character">
+                </div>
+                <div class="input-div">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="text" id="confirm-password" required autocomplete="off" placeholder="Confirm Password" disabled>
+                </div>
+            </div>
+            <div class="btns">
+                <button class="register-btn">Register</button>
+                <button class="msg-btn">-</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
